@@ -1,35 +1,45 @@
-pipeline {
+pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
+        stage('Bangalore') {
             steps {
-                echo 'git to checkout code to local repositery'
+                echo 'Welcome to Bangalore'
             }
         }
-        stage('dev') {
+        stage('Chennai') {
             steps {
-                echo 'deploy codeing to dev'
+                echo 'Welcome to Chennai'
             }
         }
-        stage('QA') {
+        stage('Hyderabad') {
             steps {
-                echo 'git to checkot to qa'
+                echo 'Welcome to Hyderabad'
             }
         }
-        stage('Alpha') {
+        stage('Tirupathi') {
             steps {
-                echo 'git to alpha'
+                echo 'Welcome to Tirupathi'
             }
         }
-        stage('prod') {
+        stage('Mumbai') {
             steps {
-                echo 'git to prod'
+                echo 'Welcome to Mumbai'
             }
         }
-        stage('Deployement sucessful') {
+        stage('Chittoor') {
             steps {
-                echo 'All enveranments sucessful'
+                echo 'Welcome to Chittoor'
+            }
+        }
+        stage('Nellore') {
+            steps {
+                echo 'Welcome to Nellore'
+            }
+        }
+        stage('Kadapa') {
+            steps {
+                echo 'Welcome to Kadapa'
             }
         }
     }
