@@ -2,24 +2,34 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Checkout') {
             steps {
-                echo 'Hello World'
+                echo 'git to checkout code to local repositery'
             }
         }
-        stage('Good morning') {
+        stage('dev') {
             steps {
-                echo 'Good morning'
+                echo 'deploy codeing to dev'
             }
         }
-        stage('age') {
+        stage('QA') {
             steps {
-                echo '30'
+                echo 'git to checkot to qa'
             }
         }
-        stage('Name') {
+        stage('Alpha') {
             steps {
-                echo 'Hemadri'
+                echo 'git to alpha'
+            }
+        }
+        stage('prod') {
+            steps {
+                echo 'git to prod'
+            }
+        }
+        stage('Deployement sucessful') {
+            steps {
+                echo 'All enveranments sucessful'
             }
         }
     }
